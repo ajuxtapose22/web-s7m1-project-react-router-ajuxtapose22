@@ -23,22 +23,22 @@
 
 Once you are done your application will have two routes:
 
-* [ ] [Screenshot of route '/'](./design-files/design-2-routeA.png)
-* [ ] [Screenshot of route '/movies/:id'](./design-files/design-3-routeB.png)
+* [x] [Screenshot of route '/'](./design-files/design-2-routeA.png)
+* [x] [Screenshot of route '/movies/:id'](./design-files/design-3-routeB.png)
 
 #### Set up Routes
 
-* [ ] Wrap the `App` component with `BrowserRouter` in `src/index.js`.
-* [ ] Inside your App file add two routes.
-  * [ ] one route for `/` that loads the `MovieList` component. This component will need the movies injected into it via props.
-  * [ ] one route that will take an `id` parameter after`/movies/` (EG: `/movies/2`, `/movies/3` where the id is dynamic). This route should load the `Movie` component.
+* [x] Wrap the `App` component with `BrowserRouter` in `src/index.js`.
+* [x] Inside your App file add two routes.
+  * [x] one route for `/` that loads the `MovieList` component. This component will need the movies injected into it via props.
+  * [x] one route that will take an `id` parameter after`/movies/` (EG: `/movies/2`, `/movies/3` where the id is dynamic). This route should load the `Movie` component.
 
 #### Add Functionality
 
-* [ ] When a user clicks on the movie card inside `MovieList` they should be taken to `/movies/{id of clicked movie here}` to see the details of the selected movie.
-* [ ] You will need to modify line 7 of `Movie.js` to get the id of the selected movie from the URL.
-* [ ] Add functionality so the `Home` button on the `SavedList` component navigates back to home.
-* [ ] You should now be able to navigate back and forth between the list of movies and the detailed view of a single movie.
+* [x] When a user clicks on the movie card inside `MovieList` they should be taken to `/movies/{id of clicked movie here}` to see the details of the selected movie.
+* [x] You will need to modify line 7 of `Movie.js` to get the id of the selected movie from the URL.
+* [x] Add functionality so the `Home` button on the `SavedList` component navigates back to home.
+* [x] You should now be able to navigate back and forth between the list of movies and the detailed view of a single movie.
 
 ### Task 3: Stretch Goals
 
@@ -52,7 +52,7 @@ If you have completed Parts 1 & 2 feel free to move on to these stretch goals.
 
 #### Add `Save Movie` functionality
 
-* [ ] You will notice there is a 'Saved Movies' component that we are not currently using. In this step you will add the functionality to save a movie. You will need to pass the `addToSavedList` function to the `Movie` component. Once you have done that you will need to add a click handler to the save button. You will need to uncomment lines 24-27 in `Movie.js` to complete this.
+* [X] You will notice there is a 'Saved Movies' component that we are not currently using. In this step you will add the functionality to save a movie. You will need to pass the `addToSavedList` function to the `Movie` component. Once you have done that you will need to add a click handler to the save button. You will need to uncomment lines 24-27 in `Movie.js` to complete this.
 
 #### Turn your Saved Movie list into `Link`s
 

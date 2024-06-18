@@ -3,7 +3,8 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
 
-export default function Movie(props) {
+
+export default function Movie({addToSavedList}) {
   const [movie, setMovie] = useState();
   const {id} = useParams()
 
@@ -24,7 +25,9 @@ export default function Movie(props) {
   }, [id]);
 
   // Uncomment this only when you have moved on to the stretch goals
-  // const saveMovie = evt => { }
+  const saveMovie = (evt) => {
+    addToSavedList(movie)
+   }
 
   if (!movie) {
     return <div>Loading movie information...</div>;
@@ -45,12 +48,12 @@ export default function Movie(props) {
         <h3>Actors</h3>
 
         {stars.map(star => (
-          <div key={star} className="movie-star">
+          <div key={star.id} className="movie-star">
             {star}
           </div>
         ))}
       </div>
-      <div className="save-button">Save</div>
+      <div className="save-button" onClick={saveMovie}>Save</div>
     </div>
   );
 }
